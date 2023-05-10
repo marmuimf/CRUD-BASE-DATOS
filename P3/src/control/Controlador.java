@@ -1,7 +1,6 @@
 package control;
 
 import datos.BaseDatos;
-import modelo.GrupoPerros;
 import modelo.Perro;
 import modelo.TransformarSql;
 import usuario.Menu;
@@ -23,10 +22,7 @@ public class Controlador {
 	 */
 	public static void main(String[] args) {
 
-		// faltaria validar, try cath y persistencia con ficheros o BD
 		int opcion = 0;
-
-		GrupoPerros listaMisPerros = new GrupoPerros("A");
 
 		// listaMisPerros.addPerro(new Perro("BullDog", "Negro", 12));
 
@@ -34,9 +30,9 @@ public class Controlador {
 			Menu.mostrar();
 			// el metodo pedir datos me devuelve un num que almacenamos
 			opcion = PedirDatos.pedirNumero(1, 8, "Introduce una opcion del menu");
-			// compruebo
-			if (opcion >= 1 && opcion <= 7) {// es valido
-				procesarOpcion(opcion, listaMisPerros);
+			
+			if (opcion >= 1 && opcion <= 7) {// es valido// compruebo
+				procesarOpcion(opcion);
 
 			}
 		} while (opcion != 8);
@@ -51,7 +47,7 @@ public class Controlador {
 	 * @param opcion es el numero que introduce el usuario por consola
 	 *
 	 */
-	private static void procesarOpcion(int opcion, GrupoPerros miLista) {
+	private static void procesarOpcion(int opcion) {
 
 		int id = 0;
 		String raza = "";

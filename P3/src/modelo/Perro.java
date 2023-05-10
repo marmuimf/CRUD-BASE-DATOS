@@ -1,5 +1,9 @@
 package modelo;
-
+/**
+ * @author Marta Muelas
+ * @version 1
+ * @since 06/05/2023
+ */
 public class Perro {
 
 	private int idperro;
@@ -13,7 +17,7 @@ public class Perro {
 		this.color = color;
 		this.peso = peso;
 	}
-
+	
 	public Perro(int idperro, String raza, String color, float peso) {
 		super();
 		this.idperro = idperro;

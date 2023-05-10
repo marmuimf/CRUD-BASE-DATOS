@@ -5,9 +5,19 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
+/**
+ * @author Marta Muelas
+ * @version 1
+ * @since 06/05/2023
+ */
 public class BaseDatos {
 
+	/**
+	 * Metodo para ejecutar una sentencia SQL
+	 * 
+	 * @param sql es la senencia SQL que recibira la base de datos
+	 *
+	 */
 	public static void ejecutarSql(String sql) {
 
 		Connection conexion = null;
@@ -47,6 +57,12 @@ public class BaseDatos {
 
 	}
 
+	/**
+	 * Metodo para hacer una consulta SQL
+	 * 
+	 * @param sql es la senencia SQL que recibira la base de datos
+	 *
+	 */
 	public static void query(String sql) {
 
 		Connection conexion = null;
@@ -87,7 +103,4 @@ public class BaseDatos {
 
 	}
 
-
-
 }
-

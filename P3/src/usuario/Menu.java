@@ -1,9 +1,14 @@
 package usuario;
-
+/**
+ * @author Marta Muelas
+ * @version 1
+ * @since 06/05/2023
+ */
 public class Menu {
 
-	//estaticos
-	
+	/**
+	 * Metodo para mostrar un menu con opciones al usuario
+	 */
 	public static void mostrar() {
 		System.out.println("MENU");
 		System.out.println("1.Mostrar perro");
